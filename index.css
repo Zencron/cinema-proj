@@ -1,0 +1,65 @@
+.backgroundColour {
+  color: var(--color-on-background);
+  background-color: var(--color-background);
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto auto;
+}
+
+.header {
+  background-color: var(--color-secondary-container);
+  color: var(--color-on-secondary-container);
+  padding: 16px;
+  grid-column: 1/4;
+}
+
+.content {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  grid-column: 2/3;
+  width: 998px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.movieCard {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  padding: 16px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 16px;
+}
+
+.movieTitle {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.movieSubtitle {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.movieDescription {
+}
+
+.buyTicketsButtonContainer {
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buyTicketsButton {
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
