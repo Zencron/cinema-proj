@@ -1,0 +1,27 @@
+CREATE TABLE movies (
+    id int NOT NULL AUTO_INCREMENT,
+    name varchar(255) NOT NULL,
+    synopsis text,
+    runtime int,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO movies (name, synopsis, runtime)
+VALUES ('Black Adam', 'Nearly 5,000 years after he was bestowed with the almighty powers
+              of the Egyptian gods -- and imprisoned just as quickly -- Black
+              Adam is freed from his earthly tomb, ready to unleash his unique
+              form of justice on the modern world.', 125);
+
+INSERT INTO movies (name, synopsis, runtime)
+VALUES ('Ajoomma', 'Produced by award-winning filmmaker Anthony Chen. Auntie (Hong
+              Huifang), is a middle-aged Singaporean woman who has dedicated the
+              best years of her life to caring for her family. Now widowed with
+              her grown up son, Sam (Shane Pow) about to fly the roost, Auntie
+              is left to contend with a whole new identity beyond her roles of
+              daughter, wife, and mother.', 90);
+
+INSERT INTO movies (name, synopsis, runtime)
+VALUES ('Prey For The Devil', 'Sister Ann (Jacqueline Byers) believes she is answering a calling
+              to be the first female exorcist… but who, or what, called her? In
+              response to a global rise in demonic possessions, Ann seeks out a
+              place at an exorcism school reopened by the Catholic Church.', 93);
