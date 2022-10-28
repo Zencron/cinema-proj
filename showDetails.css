@@ -25,3 +25,28 @@
   flex-direction: column;
   gap: 16px;
 }
+
+.detailsCard {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  padding: 16px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 16px;
+}
+
+.movieTitle {
+  font-size: 2em;
+  font-weight: 500;
+  grid-column: 1/4;
+}
+
+.movieSubtitle {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.movieForm {
+  grid-column: 1/4;
+}

@@ -40,7 +40,9 @@ $result = $conn->query($sql);
   </head>
   <body class="backgroundColour">
     <div class="mainGrid">
-      <div class="header">Cinema Proj</div>
+      <div class="header">
+        <a href="index.php">Cinema Proj</a>
+      </div>
       <div class="content">
         <?php
             if ($result->num_rows > 0) {
