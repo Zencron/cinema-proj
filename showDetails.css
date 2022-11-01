@@ -50,3 +50,18 @@
 .movieForm {
   grid-column: 1/4;
 }
+
+.makeBookingButton {
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: fit-content;
+  border: none;
+  font-size: 16px;
+}
+
+.hiddenInput {
+  display: none;
+}

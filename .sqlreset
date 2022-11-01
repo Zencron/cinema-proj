@@ -25,3 +25,15 @@ VALUES ('Prey For The Devil', 'Sister Ann (Jacqueline Byers) believes she is ans
               to be the first female exorcist… but who, or what, called her? In
               response to a global rise in demonic possessions, Ann seeks out a
               place at an exorcism school reopened by the Catholic Church.', 93);
+
+CREATE TABLE bookings (
+    id int NOT NULL AUTO_INCREMENT,
+    movieId int NOT NULL,
+    fullName varchar(255) NOT NULL,
+    cinema varchar(255) NOT NULL,
+    timeslot varchar(255) NOT NULL,
+    seats int NOT NULL,
+    cardNumber varchar(255) NOT NULL,
+    FOREIGN KEY (movieId) REFERENCES movies(id),
+    PRIMARY KEY (id)
+);

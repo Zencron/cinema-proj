@@ -22,11 +22,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$justJavaPriceUpdate = $_POST['justJavaPriceUpdate'];
-$justJava = $_POST['justJava'];
-$justJavaPrice = $_POST['justJavaPrice'];
-
-$sql = "SELECT name , synopsis , runtime FROM movies";
+$sql = "SELECT id , name , synopsis , runtime FROM movies";
 $result = $conn->query($sql);
 ?>
 
@@ -48,6 +44,7 @@ $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 // output data of each row
                 while($row = $result->fetch_assoc()) {
+                    $movieId = $row['id'];
                     $movieName = $row['name'];
                     $synopsis = $row['synopsis'];
                     $runtime = $row['runtime'];
@@ -64,7 +61,7 @@ $result = $conn->query($sql);
             </div>
           </div>
           <div class="buyTicketsButtonContainer">
-            <a class="buyTicketsButton" href="showDetails.html">Buy Tickets</a>
+            <?php echo "<a class=\"buyTicketsButton\" href=\"showDetails.php?movieId=${movieId}\">Buy Tickets</a>";?>
           </div>
         </div>
         <?php

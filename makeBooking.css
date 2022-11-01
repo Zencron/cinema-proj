@@ -17,7 +17,6 @@
 }
 
 .content {
-  margin: auto;
   margin-top: 16px;
   margin-bottom: 16px;
   grid-column: 2/3;
@@ -27,13 +26,12 @@
   gap: 16px;
 }
 
-.movieCard {
+.detailsCard {
   background-color: var(--color-primary);
   color: var(--color-on-primary);
   padding: 16px;
   border-radius: 8px;
   display: grid;
-  grid-template-columns: auto auto auto;
   gap: 16px;
 }
 
@@ -47,17 +45,17 @@
   font-weight: 500;
 }
 
-.buyTicketsButtonContainer {
-  min-width: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.hiddenInput {
+  display: none;
 }
 
-.buyTicketsButton {
+.makeBookingButton {
   background-color: var(--color-primary-container);
   color: var(--color-on-primary-container);
   padding: 16px;
   border-radius: 8px;
   cursor: pointer;
+  width: fit-content;
+  border: none;
+  font-size: 16px;
 }
